@@ -1,0 +1,23 @@
+.id-card-background{
+    background-image: linear-gradient(180deg, #4338ca 0%, rgba(50,3,237,0.37)100%);
+}
+
+#generated-id-card{
+    display: none;
+}
+
+#user-details{
+    animation-name: user-details-movement;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+    animation: user-details-movement 1s ease-in 0 1;
+}
+
+@keyframes user-details-movement {
+    0%{
+        transform: translateX(-150px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}

@@ -21,3 +21,9 @@
         transform: translateX(0px);
     }
 }
+
+#student-image{
+    border-radius: 50%;
+    width: 100px;
+    height: auto;
+}

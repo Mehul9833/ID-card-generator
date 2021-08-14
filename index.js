@@ -18,3 +18,8 @@ function generateIdCard(event) {
     const generatedIdCardContainer = document.getElementById("generated-id-card");
     generatedIdCardContainer.style.display = "block";
 };
+
+function previewImage(event) {
+    const output = document.getElementById('student-image');
+    output.src = URL.createObjectURL(event.target.files[0]);
+}

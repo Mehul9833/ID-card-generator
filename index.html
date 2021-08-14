@@ -38,6 +38,10 @@
                             <label for="location-name" class="font-semibold">Enter Location:</label>
                             <input type="text" id="location-name" placeholder="Enter your location here" class="border">
                         </div>
+                        <div class="flex flex-col w-60 mt-4">
+                            <label accept="image" for="image-upload" class="font-semibold">Upload an image</label>
+                            <input type="file" id="image-upload" class="border" onchange="previewImage(event)">
+                        </div>
                         <button class="bg-indigo-700 text-white mt-4 px-2 py-2.5 rounded"
                             onClick="generateIdCard(event)">Generate Card</button>
                     </form>
@@ -51,7 +55,8 @@
                     <div id="student-id-card" class="border border-black w-80 h-48 rounded flex mt-4">
                         <div id="stuent-image-container"
                             class="w-4/12 id-card-background flex items-center justify-center">
-                            <span class="text-8xl text-gray-400"><i class="fas fa-user-circle"></i></span>
+                            <!-- <span class="text-8xl text-gray-400"><i class="fas fa-user-circle"></i></span> -->
+                            <img id="student-image" src="#" alt="your image" class="" />
 
                         </div>
                         <div id="student-details-container" class="w-8/12 pt-4 pl-3">
